@@ -1,0 +1,53 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+#game {
+    width: 276px;
+    text-align: center;
+}
+
+#results {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#tablero {
+    display: grid;
+    grid-template-columns: repeat(3, 90px);
+    grid-template-rows: repeat(3, 90px);
+    gap: 5px;
+}
+
+.casilla {
+    width: 90px;
+    height: 90px;
+    font-size: 3rem;
+    display: grid;
+    place-items: center;
+    border: 1px solid rgb(170, 7, 7);
+}
+
+#reiniciar {
+    position: relative;
+    top: 20px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+
+#reiniciar:hover {
+    background-color: #3e8e41;
+}
